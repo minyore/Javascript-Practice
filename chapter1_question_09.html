@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Practice</title>
+    </head>
+    <body>
+        <p id="result"></p>
+    </body>
+    
+    <script>
+        // Question.09
+        // data
+        var year = '2019';
+        var month = '04';
+        var day = '26';
+        var hour = '11';
+        var minute = '34';
+        var second = '27';
+
+        // Answer.09
+        var result = year.concat("/" + month + "/" + day + "/" + hour + ":" + minute + ":" + second);
+        console.log(result);
+        document.getElementById("result").innerHTML = result;
+
+        // Solution.09
+        // concat() 인자로 주어진 배열이나 값들을 기존 배열에 합쳐서 새 배열을 반환
+        // string.concat([string]);
+    </script>
+</html>

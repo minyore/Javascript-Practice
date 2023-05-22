@@ -5,19 +5,20 @@
     </head>
     <body>
         <p id="result"></p>
+        
+        <script>
+            // Question.02
+            var arr = [200, 100, 300];
+            //pass
+            console.log(arr);
+
+            // Answer.02
+            arr.splice(2, 0, 10000);
+
+            document.getElementById("result").innerHTML = arr;
+
+            // Solution.02
+            // splice(n, m, x) 시작, 갯수, 추가
+        </script>
     </body>
-    <script>
-        // Question.02
-        var arr = [200, 100, 300];
-        //pass
-        console.log(arr);
-
-        // Answer.02
-        arr.splice(2, 0, 10000);
-
-        document.getElementById("result").innerHTML = arr;
-
-        // Solution.02
-        // splice(n, m, x) 시작, 갯수, 추가
-    </script>
 </html>

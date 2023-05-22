@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Practice</title>
+    </head>
+    <body>
+        <p>
+            <b>입력 : 5</b>
+        </p>
+        <input id="inputValue" onchange="printStars()" placeholder="5를 입력하세요"/>
+        <p id="result"></p>
+
+        <script>
+            // Question.10
+            //     *
+            //    ***
+            //   *****
+            //  *******
+            // *********
+
+            // Answer.10
+            function stars(){
+                for(var i=0; i<5; i++){
+                    for(var j=4; j>i; j--){
+                        document.write("&nbsp"); // space
+                    }
+                    for(var j=0; j<=i; j++){
+                        document.write("*");
+                    }
+                    for(var j=1; j<=i; j++){
+                        document.write("*");
+                    }
+                    document.write("<br>"); // enter
+                }
+            }
+            function printStars(){
+                if(inputValue.value == 5){
+                    stars();
+                }
+                else {
+                    document.getElementById("result").innerHTML = "5를 입력하세요";
+                }
+            }
+            // Solution.10
+        </script>
+    </body>
+</html>

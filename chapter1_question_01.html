@@ -5,31 +5,32 @@
     </head>
     <body>
         <p id="result"></p>
-    </body>
-    <script>
-        // Question.01
-        var nums = [100, 200, 300, 400, 500];
-
-        // Answer.01
-        nums.splice(3, 2);
-
-        document.getElementById("result").innerHTML = nums;
-        console.log(nums);
-
-        // Solution.01
-        // splice(n, m, x) 인덱스 위치 시작, 갯수, 추가 요소
         
-        // 배열 끝에 항목 추가
-        // nums.push(900);
+        <script>
+            // Question.01
+            var nums = [100, 200, 300, 400, 500];
 
-        // 배열 끝에서 부터 항목 제거
-        // nums.pop(500);
+            // Answer.01
+            nums.splice(3, 2);
 
-        // 배열 앞에서 항목 추가
-        // nums.unshift(400);
+            console.log(nums);
+            document.getElementById("result").innerHTML = nums;
 
-        // 배열 앞에서 항목 제거
-        // nums.shift(800);
+            // Solution.01
+            // splice(n, m, x) 인덱스 위치 시작, 갯수, 추가 요소
+            
+            // 배열 끝에 항목 추가
+            // nums.push(900);
 
-    </script>
+            // 배열 끝에서 부터 항목 제거
+            // nums.pop(500);
+
+            // 배열 앞에서 항목 추가
+            // nums.unshift(400);
+
+            // 배열 앞에서 항목 제거
+            // nums.shift(800);
+
+        </script>
+    </body>
 </html>
