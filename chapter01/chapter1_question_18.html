@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Practice</title>
+    </head>
+    <body>
+        <p>
+            <b>
+                국어, 수학, 영어 점수의 평균 (소숫점 자리는 버립니다.)
+            </b>
+        </p>
+        <p id="result1"></p>
+        <p id="result2"></p>
+        <p id="result3"></p>
+        <p id="result"></p>
+        <script>
+            // Answer.18
+            let koreanScore = parseInt(prompt("국어 점수를 입력", ""));
+            let mathScore = parseInt(prompt("수학 점수를 입력", ""));
+            let englishScore = parseInt(prompt("영어 점수를 입력", ""));
+            let average = parseInt((koreanScore + mathScore + englishScore) / 3);
+            
+            console.log(`국어, 영어, 수학의 평균 : ${average}`);
+            document.getElementById("result1").innerHTML = `국어 점수 : ${koreanScore}`;
+            document.getElementById("result2").innerHTML = `수학 점수 : ${mathScore}`;
+            document.getElementById("result3").innerHTML = `영어 점수 : ${englishScore}`;
+            document.getElementById("result").innerHTML = `평균 점수 : ${average}`;
+            // Solution.18
+            // parseInt() 함수는 문자열 인자를 파싱하여 특정 진수(수의 진법 체계에서 기준이 되는 값)의 정수를 반환.
+            // Number() 숫자 값으로 작업할 수 있게 해주는 Object 객체. 객체는 생성자를 사용하여 만들고, 원시 숫자 자료형은 함수를 사용해 생성
+        </script>
+    </body>
+</html>

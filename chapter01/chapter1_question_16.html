@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>Practice</title>
+    </head>
+    <body>
+        <p>
+            <b>
+                입력 : 거꾸로 <br>
+                출력 : 로꾸거
+            </b>
+        </p>
+        <p id="result"></p>
+
+        <script>
+            // Answer.16
+            let inputWord = prompt("거꾸로 출력", "");
+            let reverseWord = inputWord.split("").reverse().join("");
+
+            console.log(reverseWord);
+            document.getElementById("result").innerHTML = reverseWord;
+
+            // Solution.16
+            // function reverseString(str) {
+            //     // 1. split() 메서드를 사용해 새 배열을 반환하기
+            //     var splitString = str.split(""); // var splitString = "hello".split("");
+            //     // ["h", "e", "l", "l", "o"]
+            
+            //     // 2. reverse() 메서드를 사용해 새 배열의 순서를 뒤집기
+            //     var reverseArray = splitString.reverse(); // var reverseArray = ["h", "e", "l", "l", "o"].reverse();
+            //     // ["o", "l", "l", "e", "h"]
+            
+            //     // 3. join() 메서드를 사용해 배열의 모든 요소를 문자열로 결합하기
+            //     var joinArray = reverseArray.join(""); // var joinArray = ["o", "l", "l", "e", "h"].join("");
+            //     // "olleh"
+                
+            //     // 4. 반전된 문자열을 반환하기
+            //     return joinArray; // "olleh"
+            // }
+            // reverseString("hello");
+        </script>
+    </body>
+</html>
