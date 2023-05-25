@@ -20,27 +20,29 @@
 
             // Answer.10
             function stars(){
-                for(var i=0; i<5; i++){
-                    for(var j=4; j>i; j--){
+                for(let i = 0; i < 5; i++) {
+                    for(let j = 4; j > i; j--) {
                         document.write("&nbsp"); // space
                     }
-                    for(var j=0; j<=i; j++){
+                    for(let j = 0; j <= i; j++) {
                         document.write("*");
                     }
-                    for(var j=1; j<=i; j++){
+                    for(let j = 1; j <= i; j++) {
                         document.write("*");
                     }
                     document.write("<br>"); // enter
                 }
             }
+
             function printStars(){
-                if(inputValue.value == 5){
+                if(inputValue.value == 5) {
                     stars();
                 }
                 else {
                     document.getElementById("result").innerHTML = "5를 입력하세요";
                 }
             }
+
             // Solution.10
             // const n = prompt('숫자를 입력하세요.');
             // let tree = '';
