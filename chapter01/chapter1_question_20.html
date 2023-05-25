@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>Practice</title>
+</head>
+
+<body>
+    <p>
+        두 수를 입력하여 <b>몫과 나머지</b>를 구하는 프로그램 작성
+    </p>
+    <p id="result"></p>
+
+    <script>
+        // Answer.20
+        let inputs = prompt("두 수 입력").split(" ");
+        let a = parseInt(inputs[0]);
+        let b = parseInt(inputs[1]);
+        let value = (a / b).toFixed(1)  // 값
+        let quotient = parseInt(a / b) // 몫;
+        let remainder = (a % b).toFixed(1) // 나머지;
+        
+        document.getElementById("result").innerHTML = `${a}%${b} = 값: ${value}, 몫: ${quotient}, 나머지 : ${remainder}`;
+
+        // Solution.20
+        // .toFixed(digits) // 소수점 뒤에 나타날 자릿수. 0 이상 20 이하의 값을 사용, 값을 지정하지 않으면 0을 사용
+    </script>
+</body>
+
+</html>
