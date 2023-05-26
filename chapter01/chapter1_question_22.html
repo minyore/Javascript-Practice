@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>Practice</title>
+</head>
+
+<body>
+    <p>
+        <b>변수 i 가 6의 배수인지 확인하는 방법으로 올바른 것</b>
+    </p>
+    <p>
+        1. i / 6 == 0 <br>
+        2. i % 6 == 0 <br>
+        3. i & 6 == 0 <br>
+        4. i | 6 == 0 <br>
+        5. i // 6 == 0
+    </p>
+    <p id="inputValue"></p>
+    <p id="result"></p>
+
+    <script>
+        let i = prompt("6의 배수인지 확인", "");
+        document.getElementById("inputValue").innerHTML = `입력 값: ${i}`;
+
+        if(i % 6 == 0) {
+            console.log("6의 배수");
+            document.getElementById("result").innerHTML = "6의 배수";
+        }
+        else if(isNaN(i) == true) {
+            console.log("숫자만 입력");
+            document.getElementById("result").innerHTML = "숫자만 입력";
+        }
+        else {
+            console.log("6의 배수가 아님");
+            document.getElementById("result").innerHTML = "6의 배수가 아님";
+        }
+    </script>
+</body>
+
+</html>

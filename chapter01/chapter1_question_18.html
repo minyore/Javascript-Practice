@@ -13,11 +13,12 @@
         <p id="result2"></p>
         <p id="result3"></p>
         <p id="result"></p>
+        
         <script>
             // Answer.18
-            let koreanScore = parseInt(prompt("국어 점수를 입력", ""));
-            let mathScore = parseInt(prompt("수학 점수를 입력", ""));
-            let englishScore = parseInt(prompt("영어 점수를 입력", ""));
+            let koreanScore = prompt("국어 점수를 입력", "");
+            let mathScore = prompt("수학 점수를 입력", "");
+            let englishScore = prompt("영어 점수를 입력", "");
             let average = Math.floor((koreanScore + mathScore + englishScore) / 3);
             
             console.log(`국어, 영어, 수학의 평균 : ${average}`);
@@ -25,6 +26,7 @@
             document.getElementById("result2").innerHTML = `수학 점수 : ${mathScore}`;
             document.getElementById("result3").innerHTML = `영어 점수 : ${englishScore}`;
             document.getElementById("result").innerHTML = `평균 점수 : ${average}`;
+
             // Solution.18
             // parseInt(string, radix) 문자열 인자를 파싱, 정수 반환. 정수로 변환 X, NaN 반환
             // parseFloat(string) 문자열 인자를 파싱, 실수 반환. 실수로 변환 X, NaN 반환
