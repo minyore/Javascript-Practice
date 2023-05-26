@@ -9,16 +9,21 @@
                 키를 입력해서 150cm 이상일 때 Yes 아닐 때 No 출력
             </b>
         </p>
+        <p id="inputValue"></p>
+        <p id="result"></p>
 
         <script>
             // Answer.17
             let inputHeight = prompt("키를 입력하세요", "");
+            document.getElementById("inputValue").innerHTML = `입력 값 : ${inputHeight}cm`;
 
             if(inputHeight >= 150) {
                 console.log("Yes");
+                document.getElementById("result").innerHTML = "Yes";
             }
             else {
                 console.log("No");
+                document.getElementById("result").innerHTML = "No";
             }
         </script>
     </body>

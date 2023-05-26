@@ -16,19 +16,30 @@
         <script>
             // Answer.13
             let planets = ["수성", "금성", "지구", "화성", "목성", "토성", "천왕성", "해왕성"];
-            let n = prompt("몇 번째 행성을 찾으시나요?", "");
+            let n = parseInt(prompt("몇 번째 행성을 찾으시나요?", ""));
 
-            if(n <= 8) {
+            if(n <= 8)  {
                 console.log(planets[n-1]);
+                document.getElementById("result").innerHTML = planets[n-1];
+            }
+            else if(isNaN(n) == true) {
+                document.getElementById("result").innerHTML = "숫자를 입력하세요";
             }
             else {
                 alert("행성은 최대 8개 입니다");
+                document.getElementById("result").innerHTML = "행성은 최대 8개";
             }
-
-            document.getElementById("result").innerHTML = planets[n-1];
 
             // Solution.13
             // result = prompt(title, [default]);
+            // fillter() // 배열에 사용, 주어진 함수를 만족하는 모든 요소를 모아 새 배열로 반환
+            // const newArray = arr.filter(callbackFunction(element, index, array), thisArg);
+            // let array = [3, 5, 11, 0, 9, "string"];
+            // let result = array.filter((value) => value < 10)
+            // console.log(result); // [3, 5, 0, 9]
+            // indexOf() // 배열 안에서 찾으려는 값(searchElement)과 정확하게 일치(===)하는첫번째 element의 index를 리턴
+            // lastIndexOf() // 배열 안에서 찾으려는 값(searchElement)과 정확하게 일치(===)하는 '마지막' element의 index 를 리턴
+            // isNaN(value) // 매개변수가 숫자가 아니면 true, 숫자이면 false를 반환
         </script>
     </body>
 </html>

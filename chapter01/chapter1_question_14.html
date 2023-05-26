@@ -9,17 +9,26 @@
                3의 배수는 "짝", 3의 배수가 아니라면 "n" 출력
             </b>
         </p>
+        <p id="inputValue"></p>
+        <p id="result"></p>
 
         <script>
             // Answer.14
             let n = prompt("숫자 입력", "");
+            document.getElementById("inputValue").innerHTML = `입력 값: ${n}`;
 
             if(n % 3 == 0) {
                 console.log("짝");
+                document.getElementById("result").innerHTML = "짝";
+            }
+            else if(isNaN(n) == true) {
+                document.getElementById("result").innerHTML = "숫자를 입력하세요";
             }
             else {
+                n = parseInt(n);
                 console.log(n);
+                document.getElementById("result").innerHTML = `출력 값: ${n}`;
             }
-        </script>
+            </script>
     </body>
 </html>

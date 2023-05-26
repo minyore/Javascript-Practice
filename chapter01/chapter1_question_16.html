@@ -10,6 +10,7 @@
                 출력 : 로꾸거
             </b>
         </p>
+        <p id="inputValue"></p>
         <p id="result"></p>
 
         <script>
@@ -17,8 +18,9 @@
             let inputWord = prompt("거꾸로 출력", "");
             let reverseWord = inputWord.split("").reverse().join("");
 
-            console.log(reverseWord);
-            document.getElementById("result").innerHTML = reverseWord;
+            document.getElementById("inputValue").innerHTML = `입력 값 : ${inputWord}`;
+            document.getElementById("result").innerHTML = `출력 값 : ${reverseWord}`;
+            console.log(inputWord, reverseWord);
 
             // Solution.16
             // function reverseString(str) {

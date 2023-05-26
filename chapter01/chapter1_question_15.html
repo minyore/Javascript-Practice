@@ -10,17 +10,21 @@
                 출력 : 안녕하세요. 저는 김다정입니다.
             </b>
         </p>
+        <p id="inputValue"></p>
+        <p id="result"></p>
 
         <script>
             // Answer.15
             const name = "김다정";
             let inputName = prompt("이름 입력", "");
-
-            if(inputName === name) {
+            
+            if(inputName == name) {
                 console.log(`안녕하세요. 저는 ${name} 입니다.`);
+                document.getElementById("inputValue").innerHTML = `출력 값: 안녕하세요. 저는 ${name} 입니다.`;
             }
             else {
                 console.log("이름이 잘못 되었습니다.");
+                document.getElementById("result").innerHTML = `이름이 잘못 되었습니다.`;
             }
         </script>
     </body>
