@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>Practice</title>
+</head>
+
+<body>
+    <p>
+        <b>2-gram</b>이란 문자열에서 2개의 연속된 요소를 출력하는 방법입니다.<br>
+        예를들어 'Javascript'를 2-gram으로 반복해 본다면 다음과 같은 결과가 나옵니다.
+    </p>
+
+    <script>
+    // Answer.28
+    const inputValue = prompt("입력", "");
+    console.log(inputValue);
+
+    for(let i = 0; i < inputValue.length - 1; i++){
+        console.log(inputValue.slice(i, i + 2));
+    }
+
+    // Solution.28
+    // split() //str.split([separator[, limit]])
+    // - sperator(구분자)와, 분리할 문자열의 개수 limit을 인자로 받음 limit은 optional 값
+    // - limit은 구분자로 분리할 문자열의 개수 0을 전달하면 빈배열을 리턴, 1을 전달하면 구분자로 1개의 문자열만 잘라서 배열을 리턴
+
+    // substr() // str.substr(start[, length])
+    // - start는 index이고, length길이만큼 잘라서 문자열로 리턴
+    // - start 인덱스가 음수이면, 뒤에서 부터 숫자를 셈
+
+    // substring() // str.substring(start, end)
+    // - 시작 index에서 끝 index전까지 문자열 잘라서 리턴
+
+    // slice() // str.slice([begin[, end]])
+    // - 시작 index에서 끝 index전까지 문자열 잘라서 리턴
+    // - slice()는 음수도 Index를 적용하여 문자열을 자름
+    </script>
+</body>
+
+</html>
